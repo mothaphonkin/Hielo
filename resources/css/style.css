@@ -1,0 +1,504 @@
+/* ==== custom css for Clone-2 ==== */
+
+
+/*############# default css #################*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.3em;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/*################ section-header #####################*/
+
+.section-header {
+    width: 100%;
+    height: auto;
+    background: url("img/slide01.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1em .8em 0 .8em;
+}
+
+.section-header>header {
+    margin-bottom: 6em;
+}
+
+nav::before,
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.navLogo {
+    float: left;
+}
+
+.navLogo span {
+    color: #ddd;
+    text-transform: uppercase;
+}
+
+.navLogo a,
+.navLogo span {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+.navLogo a:hover,
+.navLogo a:active {
+    color: #ddd;
+}
+
+.topNav {
+    float: right;
+}
+
+.topNav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.topNav ul li:not(:first-child) {
+    display: none;
+}
+
+.topNav ul li:first-of-type a {
+    font-size: .75em;
+}
+
+.topNav ul li:not(:first-child) a {
+    text-transform: uppercase;
+    min-height: .9em;
+    color: #ddd;
+}
+
+
+/*############### article ###################*/
+
+.section-header {
+    width: 100%;
+}
+
+.section-header article {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.section-header article header {
+    width: 100%;
+}
+
+.section-header header p {
+    color: #ddd;
+    text-transform: uppercase;
+    word-spacing: .4em;
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.section-header header span {
+    color: #fff;
+}
+
+.section-header header .decoration {
+    max-width: 330px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.section-header header h1 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+.section-header header .indicators {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.section-header .indicators li {
+    display: inline-block;
+    margin: 0 .4em;
+    text-indent: -10000px;
+    width: .6em;
+    height: .6em;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section-header .indicators li:not(:first-child) {
+    opacity: .5;
+}
+
+.section-header .indicators li:first-child {
+    background: #fff;
+}
+
+
+/*################# section-columns #######################*/
+
+.section-columns {
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.section-columns .box-1 {
+    width: 80%;
+    height: auto;
+    margin: 4em auto 4em auto;
+    background: #fff;
+    text-align: center;
+}
+
+.row .col-6:first-child .box-1 {
+    margin-left: 5.25em;
+}
+
+.row .col-6:nth-of-type(2) .box-1 {
+    margin-right: 5.25em;
+}
+
+.section-columns article {
+    width: 90%;
+    margin: auto;
+}
+
+.section-columns .box-1 p:first-of-type {
+    text-transform: uppercase;
+    font-size: .5em;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: 3px;
+    margin: 2rem 0 .7rem 0;
+}
+
+.section-columns .box-1 p:first-of-type::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 47%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.section-columns .box-1 h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+}
+
+.section-columns .box-1 p:last-of-type {
+    text-align: left;
+    word-break: break-all;
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 1.4rem;
+    color: #a6a6a6;
+    margin-bottom: 1.5rem;
+}
+
+.section-columns .box-1 p:last-of-type+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    box-shadow: inset -1px -1px 0 1px rgba(0, 0, 0, .2), inset 1px 1px 0 1px rgba(0, 0, 0, .2);
+    padding: 10px 18px;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+}
+
+.section-columns .box-1 p:last-of-type+a:hover,
+.section-columns .box-1 p:last-of-type+a:active {
+    background: #eaeaea;
+}
+
+.section-columns .box-1 div,
+.section-columns .box-1 img {
+    width: 100%;
+}
+
+
+/*################# section-decoration ####################*/
+
+.section-decoration {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url("img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.section-decoration article p {
+    text-transform: uppercase;
+    font-size: .6em;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 3rem 0 .7rem 0;
+}
+
+.section-decoration article p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: rgba(255, 255, 255, .6);
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.section-decoration article h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+
+/*################# section-multiple-columns ##############*/
+
+.section-multiple-columns {
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    padding-bottom: 3em;
+}
+
+.section-multiple-columns img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section-multiple-columns div:not(.row) {
+    text-align: center;
+}
+
+.section-multiple-columns article p {
+    text-transform: uppercase;
+    font-size: .6em;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 3rem 0 .7rem 0;
+}
+
+.section-multiple-columns p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: rgba(0, 0, 0, .2);
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.section-multiple-columns h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.section-multiple-columns .box-1 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 2em auto;
+}
+
+.section-multiple-columns .box-1 div {
+    height: 100%;
+    background: #fff;
+    padding: 15px;
+}
+
+
+/*################# footer ################################*/
+
+.section-footer {
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+.section-footer .networks,
+.section-footer .copy {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-footer .networks {
+    margin-top: 2em;
+}
+
+.section-footer .copy {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.section-footer .networks i {
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, .5);
+    display: inline-block;
+    margin: .4rem;
+}
+
+.section-footer .networks a {
+    text-decoration: none;
+}
+
+.section-footer .networks i:hover,
+.section-footer .networks i:active {
+    color: #fff;
+}
+
+.copy small {
+    color: #bbb;
+}
+/*################# responsive ############################*/
+
+@media screen and (max-width: 385px) {
+    .section-header {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .section-header .navLogo {
+        margin-right: 1em;
+    }
+    .section-header .topNav {
+        position: absolute;
+        right: 0;
+        margin-right: .5rem;
+    }
+    .section-header article p,
+    .section-header article span {
+        font-size: 0.7rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .section-header article .decoration {
+        max-width: 100px;
+    }
+    .section-header article h1 {
+        font-size: 2.5rem;
+    }
+    .section-columns .row .col-6 {
+        width: 100%;
+    }
+    .row .col-6:first-child .box-1 {
+        margin-left: auto;
+    }
+    .row .col-6:nth-of-type(2) .box-1 {
+        margin-right: auto;
+    }
+    .section-columns .col-6 .box-1 {
+        width: 90%;
+        margin: 2em auto;
+    }
+    .section-columns .box-1 p:last-of-type+a {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+
+/*################# usable classes #######################*/
+
+.center {
+    text-align: center;
+}
